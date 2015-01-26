@@ -1,5 +1,10 @@
 ﻿using System.Net.Mime;
 using MahApps.Metro.Controls;
+using System.Diagnostics;
+using System.IO;
+using System.Data;
+using System;
+using DupDestoryer.Classes;
 
 namespace DupDestoryer
 {
@@ -19,6 +24,11 @@ namespace DupDestoryer
             var dialog = new System.Windows.Forms.FolderBrowserDialog();
             System.Windows.Forms.DialogResult result = dialog.ShowDialog();
             Box.Text = dialog.SelectedPath;
+        }
+
+        private void Button_Click_1(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Files.ItemsSource = FileHelper.ShowAllFoldersUnder(@Box.Text).DefaultView;
         }
     }
 }

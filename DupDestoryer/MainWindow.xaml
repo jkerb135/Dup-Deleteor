@@ -32,10 +32,14 @@
             </Button>
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
-    
+
     <Grid>
         <TextBox Name="Box" HorizontalAlignment="Left" Height="23" Margin="10,11,0,0" TextWrapping="Wrap" Text="Select Your File Path" VerticalAlignment="Top" Width="531" IsEnabled="False"/>
         <Button Content="Browse" HorizontalAlignment="Left" Margin="559,11,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+        <Button Content="Dick Smash Mcguyver" HorizontalAlignment="Left" Margin="496,436,0,0" VerticalAlignment="Top" Width="138" Click="Button_Click_1"/>
+        <DataGrid Name="Files" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Height="365" Width="624"/>
+
 
     </Grid>
 </Controls:MetroWindow>
