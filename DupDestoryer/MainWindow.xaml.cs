@@ -59,6 +59,7 @@ namespace DupDestoryer
     {
         public bool Equals(FileAttrib p1, FileAttrib p2)
         {
+            if (Math.Abs(p1.FileLength - p2.FileLength) > 0) return false;
             if (p1.FileImpression != p2.FileImpression) return false;
             FileSystem.DeleteFile(p2.FilePath, UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin);
             return true;
