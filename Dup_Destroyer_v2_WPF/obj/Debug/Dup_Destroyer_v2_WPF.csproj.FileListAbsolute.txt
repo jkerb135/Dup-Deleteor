@@ -1,0 +1,128 @@
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.exe.config
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.exe
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.pdb
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\MahApps.Metro.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\System.Windows.Interactivity.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\MahApps.Metro.xml
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\MainWindow.baml
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Resources\Icons.baml
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Views\ImageDestroyer.baml
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\MainWindow.g.cs
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Resources\Icons.g.cs
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Views\ImageDestroyer.g.cs
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\App.g.cs
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF_MarkupCompile.cache
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF_MarkupCompile.lref
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\App.baml
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.g.resources
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.Properties.Resources.resources
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.csproj.GenerateResource.Cache
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.exe
+D:\Users\Josh\Documents\Visual Studio 2013\Projects\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.pdb
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.exe.config
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.exe
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.pdb
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.exe
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.pdb
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\MahApps.Metro.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\System.Windows.Interactivity.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\MahApps.Metro.xml
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\de\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\en\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\es\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\it\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.csprojResolveAssemblyReference.cache
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\MainWindow.baml
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Resources\Icons.baml
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Views\ImageDestroyer.baml
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\MainWindow.g.cs
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Resources\Icons.g.cs
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Views\ImageDestroyer.g.cs
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\App.g.cs
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF_MarkupCompile.cache
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF_MarkupCompile.lref
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\App.baml
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.g.resources
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.Properties.Resources.resources
+H:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.csproj.GenerateResource.Cache
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.exe.config
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.exe
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.pdb
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.exe
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.pdb
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\MahApps.Metro.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\System.Windows.Interactivity.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\MahApps.Metro.xml
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.csprojResolveAssemblyReference.cache
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\MainWindow.baml
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Resources\Icons.baml
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Views\ImageDestroyer.baml
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\MainWindow.g.cs
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Resources\Icons.g.cs
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Views\ImageDestroyer.g.cs
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\App.g.cs
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF_MarkupCompile.cache
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF_MarkupCompile.lref
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\App.baml
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.g.resources
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.Properties.Resources.resources
+E:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.csproj.GenerateResource.Cache
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.exe.config
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.exe
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.pdb
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.csprojResolveAssemblyReference.cache
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\MainWindow.baml
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Resources\Icons.baml
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Views\ImageDestroyer.baml
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\MainWindow.g.cs
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Resources\Icons.g.cs
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Views\ImageDestroyer.g.cs
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\App.g.cs
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF_MarkupCompile.cache
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF_MarkupCompile.lref
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.exe
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\Dup_Destroyer_v2_WPF.pdb
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\MahApps.Metro.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\System.Windows.Interactivity.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\MahApps.Metro.xml
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\de\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\en\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\es\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\it\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\App.baml
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.g.resources
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.Properties.Resources.resources
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\obj\Debug\Dup_Destroyer_v2_WPF.csproj.GenerateResource.Cache
+G:\Dup_Destroyer_v2_WPF\Dup_Destroyer_v2_WPF\bin\Debug\XnaFan.ImageComparison.dll

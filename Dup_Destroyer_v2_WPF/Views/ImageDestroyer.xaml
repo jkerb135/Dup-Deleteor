@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Dup_Destroyer_v2_WPF.Views.ImageDestroyer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="473" d:DesignWidth="450">
+    <Grid>
+        <TextBox Height="23" TextWrapping="Wrap" Text="Browse For Folder" IsReadOnly="True" Margin="0,-1,103,448" />
+        <Button Content="Browse" Margin="352,0,0,448"/>
+
+    </Grid>
+</UserControl>
