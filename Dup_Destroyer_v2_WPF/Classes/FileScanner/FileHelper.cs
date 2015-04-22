@@ -48,6 +48,7 @@ namespace Dup_Destroyer_v2_WPF.Classes.FileScanner
                     .Where(x => x.Count() > 1)
                     .SelectMany(x => x)
                     .OrderByDescending(x => x.FileName);
+
         }
 
         private static string FileToMd5Hash(string fileName)
