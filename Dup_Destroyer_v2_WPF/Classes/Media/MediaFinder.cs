@@ -35,11 +35,11 @@ namespace Dup_Destroyer_v2_WPF.Classes.Media
                 for (var j = i + 1; j < files.Count(); j++)
                 {
                     var f2 = files[j];
-                    f2.MediaHash = ConvertToMono(f2.FilePath);
+                    //f2.MediaHash = ConvertToMono(f2.FilePath);
 
                     ReportProgress(0,
                         new Tuple<string, string>("false", "Comparing " + f.FileName + " with " + f2.FileName));
-                   f2.MediaHash = ConvertToMono(f2.FilePath);
+                   //f2.MediaHash = ConvertToMono(f2.FilePath);
 
                     if (!_audio.Contains(f2))
                     {
@@ -48,7 +48,7 @@ namespace Dup_Destroyer_v2_WPF.Classes.Media
                     Thread.Sleep(50);
                 }
             }
-            return null;
+            return _audio;
         }
 
         private static float[] ConvertToMono(string path)

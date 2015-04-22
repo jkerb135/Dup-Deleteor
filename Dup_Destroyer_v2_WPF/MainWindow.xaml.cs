@@ -279,6 +279,7 @@ namespace Dup_Destroyer_v2_WPF
                     ContentsImagesDataGrid.ItemsSource = items;
                     break;
                 case 3:
+                    MessageBox.Show(items.Count().ToString());
                     ContentsAudioDataGrid.ItemsSource = items;
                     break;
             }
