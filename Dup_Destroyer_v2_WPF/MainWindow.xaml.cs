@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
-using DupDestroyer_v2.Classes;
+using Dup_Destroyer_v2_WPF.Classes;
 using Dup_Destroyer_v2_WPF.Classes.AppSettings;
 using Dup_Destroyer_v2_WPF.Classes.FileScanner;
 using Dup_Destroyer_v2_WPF.Classes.ImageScanner;
@@ -24,9 +24,8 @@ namespace Dup_Destroyer_v2_WPF
     public partial class MainWindow
     {
         private DirectoryInfo _standardPath = null;
-        private String _selectedTab;
+        private int _selectedTab;
         private readonly ImageSettings _settings = new ImageSettings();
-        private readonly BackgroundWorker _listImagesBackgroundWorker = new BackgroundWorker();
         private readonly String _systemDrive = Path.GetPathRoot(Environment.GetFolderPath(Environment.SpecialFolder.System));
 
         public MainWindow()
@@ -41,8 +40,6 @@ namespace Dup_Destroyer_v2_WPF
             FilePathTxt.Text = Path.GetPathRoot(Environment.GetFolderPath(Environment.SpecialFolder.System));
             ImageFilePathTxt.Text = _systemDrive;
             BindImageSettings();
-            _listImagesBackgroundWorker.DoWork += ListImagesBackgroundWorker_DoWork;
-            _listImagesBackgroundWorker.RunWorkerCompleted += ListImagesBackgroundWorker_RunWorkerCompleted;
         }
 
         private void BindImageSettings()
@@ -57,16 +54,15 @@ namespace Dup_Destroyer_v2_WPF
         {
             var folderDialog = new FolderBrowserDialog {Description = "Select Your Folder", ShowNewFolderButton = false};
             if (folderDialog.ShowDialog() != System.Windows.Forms.DialogResult.OK) return;
-             if (_selectedTab.Equals("File", StringComparison.InvariantCultureIgnoreCase))
+             if (_selectedTab.Equals(1))
             {
                 FilePathTxt.Text = folderDialog.SelectedPath;
-                fileDestroyerPGB.Value = 0;
             }
-             else if (_selectedTab.Equals("Image", StringComparison.InvariantCultureIgnoreCase))
+             else if (_selectedTab.Equals(2))
             {
                 ImageFilePathTxt.Text = folderDialog.SelectedPath;
             }
-             else if (_selectedTab.Equals("Audio", StringComparison.InvariantCultureIgnoreCase))
+             else if (_selectedTab.Equals(3))
             {
                 AudioFilePathTxt.Text = folderDialog.SelectedPath;
             }
@@ -74,33 +70,19 @@ namespace Dup_Destroyer_v2_WPF
 
         private void listDupsBtn_Click(object sender, RoutedEventArgs e)
         {
+            fileDestroyerPGB.Value = 0;
+            var fileWorker = new GetFiles(_standardPath,GetFilters(tabControl1.SelectedIndex));
 
-            var button = sender as Button;
+            fileWorker.ProgressChanged += Report_ProgressChanged;
+            fileWorker.RunWorkerCompleted += FileWorker_RunWorkerCompleted;
 
-            if (button != null && button.Name.Equals("FileScan", StringComparison.CurrentCultureIgnoreCase))
-            {
-                _standardPath = new DirectoryInfo(@FilePathTxt.Text);
-                var fileHelper = new FileHelper(_standardPath);
-                fileHelper.ProgressChanged += FileHelper_ProgressChanged;
-                fileHelper.RunWorkerCompleted += FileHelper_RunWorkerCompleted;
+            if (fileWorker.IsBusy) return;
 
-                if (fileHelper.IsBusy) return;
-                fileHelper.RunWorkerAsync();
-
-            }
-            else if (button != null && button.Name.Equals("ImageScan", StringComparison.CurrentCultureIgnoreCase))
-            {
-                _listImagesBackgroundWorker.RunWorkerAsync();
-            }
-            else if (button != null && button.Name.Equals("AudioScan", StringComparison.CurrentCultureIgnoreCase))
-            {
-                _standardPath = new DirectoryInfo(@AudioFilePathTxt.Text);
-                var mediaHelper = new MediaFinder(_standardPath);
-                mediaHelper.ProgressChanged += MediaHelper_ProgressChanged;
-                mediaHelper.RunWorkerCompleted += MediaHelper_RunWorkerCompleted;
-                if (mediaHelper.IsBusy) return;
-                mediaHelper.RunWorkerAsync();
-            }
+            var count = fileWorker.GetDirectoryCount(_standardPath.FullName);
+            fileDestroyerPGB.Maximum = count;
+            ImageProgressBar.Maximum = count;
+            audioDestroyerPBG.Maximum = count;
+            fileWorker.RunWorkerAsync();
         }
 
         private void OpenFileLocation(object sender, RoutedEventArgs e)
@@ -114,7 +96,7 @@ namespace Dup_Destroyer_v2_WPF
         private void deleteDupsBtn_Click(object sender, RoutedEventArgs e)
         {
             var fileRemoval = new FileRemoval(_standardPath.FullName,ContentsFilesDataGrid.ItemsSource.Cast<FileAttrib>().ToList());
-            fileRemoval.ProgressChanged += FileHelper_ProgressChanged;
+            //fileRemoval.ProgressChanged += FileHelper_ProgressChanged;
             //fileRemoval.RunWorkerCompleted += FileHelper_RunWorkerCompleted;
 
             if (fileRemoval.IsBusy) return;
@@ -123,7 +105,7 @@ namespace Dup_Destroyer_v2_WPF
 
         private void Selection_Changed(object sender, SelectionChangedEventArgs e)
         {
-            _selectedTab = ((TabItem)tabControl1.SelectedItem).Name;
+            _selectedTab = (tabControl1.SelectedIndex);
         }
 
         private void GoHome(object sender, RoutedEventArgs e)
@@ -180,26 +162,6 @@ namespace Dup_Destroyer_v2_WPF
             BindImageSettings();
         }
 
-        protected void FileHelper_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            if (e.UserState == null) return;
-            var userstate = e.UserState.ToString().Split(',');
-            if (userstate[0].TrimStart('(').Trim().Equals("true", StringComparison.CurrentCultureIgnoreCase))
-            {
-                fileDestroyerPGB.Value = 0;
-                fileDestroyerPGB.Maximum = e.ProgressPercentage;
-            }
-            ProgressLabel.Content = userstate[1].TrimEnd(')');
-            fileDestroyerPGB.Value += 1;
-        }
-
-        private void FileHelper_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            var result = (List<FileAttrib>) e.Result;
-            ContentsFilesDataGrid.ItemsSource = result;
-            
-        }
-
         protected void MediaHelper_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             if (e.UserState == null) return;
@@ -213,27 +175,113 @@ namespace Dup_Destroyer_v2_WPF
             audioDestroyerPBG.Value += 1;
         }
 
-        private void MediaHelper_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        private static IEnumerable<string> GetFilters(int index)
         {
-            var result = (List<FileAttrib>)e.Result;
-            ContentsFilesDataGrid.ItemsSource = result;
-
-        }
-
-        private void ListImagesBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
-        {
-            Dispatcher.Invoke(() =>
+            switch (index)
             {
-                    _standardPath = new DirectoryInfo(@ImageFilePathTxt.Text);
-                    e.Result = ImageFinder.FindDuplicateImages(_standardPath, ImageProgressBar);
-            });
-        }
+                case 1:
+                    return new List<string> { "*.txt", "*.doc", "*.docx", "*.xls" };
+                case 2:
+                    return new List<string> { "*.gif", "*.tif", "*.jpg", "*.bmp", "*.png", "*.psd", "*.thm", "*.yuv" };
+                case 3:
+                   return new List<string> { "*.mp3", "*.ogg", "*.flac", "*.wav" };
+            }
+            return null;
+        } 
 
-        private void ListImagesBackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        protected void Report_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            var result = (List<FileAttrib>)e.Result;
-            ContentsImagesDataGrid.ItemsSource = result;
+            if (e.UserState == null) return;
+            var userstate = e.UserState.ToString().Split(',');
+            var message = userstate[1].TrimEnd(')');
+            UpdateGui(message);
         }
 
+        private void FileWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            StartNextTask(e.Result as List<FileAttrib>);
+        }
+
+        private void ChangePath(object sender, TextChangedEventArgs e)
+        {
+            var textbox = sender as TextBox;
+            if (@textbox != null) _standardPath = new DirectoryInfo(@textbox.Text);
+        }
+
+        private void StartNextTask(List<FileAttrib> files)
+        {
+            var count = 0;
+            for (var i = files.Count - 1; i > 0; i--)
+            {
+                count += i;
+            }
+            switch (_selectedTab)
+            {
+                case 1:
+                    fileDestroyerPGB.Maximum = count;
+                    fileDestroyerPGB.Value = 0;
+                    var fileAnalyzer = new FileHelper(files);
+                    fileAnalyzer.ProgressChanged += Report_ProgressChanged;
+                    fileAnalyzer.RunWorkerCompleted += Run_WorkCompleted;
+                    fileAnalyzer.RunWorkerAsync();
+                    break;
+                case 2:
+                    ImageProgressBar.Maximum = count;
+                    ImageProgressBar.Value = 0;
+                    var imageAnaylzer = new ImageAnalyzer(files);
+                    imageAnaylzer.ProgressChanged += Report_ProgressChanged;
+                    imageAnaylzer.RunWorkerCompleted += Run_WorkCompleted;
+                    imageAnaylzer.RunWorkerAsync();
+                    break;
+                case 3:
+                    audioDestroyerPBG.Maximum = count;
+                    audioDestroyerPBG.Value = 0;
+                    var audioAnalyzer = new MediaFinder(files);
+                    audioAnalyzer.ProgressChanged += Report_ProgressChanged;
+                    audioAnalyzer.RunWorkerCompleted += Run_WorkCompleted;
+                    audioAnalyzer.RunWorkerAsync();
+                    break;
+            }
+        }
+
+        private void Run_WorkCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            UpdateGrid(e.Result as IEnumerable<FileAttrib>);
+        }
+
+        private void UpdateGui(string message)
+        {
+            switch (_selectedTab)
+            {
+                case 1:
+                    ProgressLabel.Content = message;
+                    fileDestroyerPGB.Value += 1;
+                    break;
+                case 2:
+                    ProgressLabel2.Content = message;
+                    ImageProgressBar.Value += 1;
+                    break;
+                case 3:
+                    ProgressLabel3.Content = message;
+                    audioDestroyerPBG.Value += 1;
+                    break;
+            }
+        }
+        
+        private void UpdateGrid(IEnumerable<FileAttrib> items)
+        {
+            switch (_selectedTab)
+            {
+                case 1:
+                    ContentsFilesDataGrid.ItemsSource = items;
+                    break;
+                case 2:
+                    ContentsImagesDataGrid.ItemsSource = items;
+                    break;
+                case 3:
+                    ContentsAudioDataGrid.ItemsSource = items;
+                    break;
+            }
+        }
     }
 }

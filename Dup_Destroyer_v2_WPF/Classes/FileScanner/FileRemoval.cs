@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows;
-using DupDestroyer_v2.Classes;
 using Microsoft.VisualBasic.FileIO;
 
 namespace Dup_Destroyer_v2_WPF.Classes.FileScanner

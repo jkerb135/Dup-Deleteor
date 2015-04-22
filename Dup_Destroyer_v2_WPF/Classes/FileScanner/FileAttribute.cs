@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.VisualBasic.FileIO;
 
-namespace DupDestroyer_v2.Classes
+namespace Dup_Destroyer_v2_WPF.Classes.FileScanner
 {
-    public class FileAttrib
+    public class FileAttrib : IEqualityComparer<FileAttrib>
     {
         public string FileName { get; set; }
         public string FilePath { get; set; }
         public string FileModifiedTime { get; set; }
+        public ulong ImageHash { get; set; }
+        public float[] MediaHash { get; set; }
         public string MD5 { get; set; }
-        public string Sha256 { get; set; }
         public double FileLength { get; set; }
         public string FileExtension { get; set; }
 
@@ -25,33 +24,25 @@ namespace DupDestroyer_v2.Classes
                 FileName = finfo.Name,
                 FilePath = finfo.FullName,
                 FileExtension = finfo.Extension,
-                MD5 = FileToMd5Hash(finfo.FullName),
                 FileModifiedTime = finfo.LastWriteTimeUtc.ToString(),
                 FileLength = finfo.Length
             };
         }
 
-        private static string FileToMd5Hash(string fileName)
-        {
-            try
-            {
-
-                using (var stream = new BufferedStream(File.OpenRead(fileName), 1200000))
-                {
-                    var sha = new SHA256Managed();
-                    var checksum = sha.ComputeHash(stream);
-                    return BitConverter.ToString(checksum).Replace("-", string.Empty);
-                }
-            }
-            catch (IOException)
-            {
-                return string.Empty;
-            }
-        }
-
         public static string GetSha256(string filepath)
         {
             return BitConverter.ToString(SHA256.Create().ComputeHash(File.ReadAllBytes(filepath))).Replace("-", "");
+        }
+
+        public bool Equals(FileAttrib p1, FileAttrib p2)
+        {
+            if (Math.Abs(p1.FileLength - p2.FileLength) > 0) return false;
+            return p1.MD5 == p2.MD5;
+        }
+
+        public int GetHashCode(FileAttrib p)
+        {
+            return base.GetHashCode();
         }
     }
 

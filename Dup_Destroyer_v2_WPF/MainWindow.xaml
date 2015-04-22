@@ -44,7 +44,7 @@
                     <ColumnDefinition Width="157*"/>
                     <ColumnDefinition Width="283*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="FilePathTxt" HorizontalAlignment="Left" Height="23" Margin="10,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="705" IsReadOnly="True" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="FilePathTxt" HorizontalAlignment="Left" Height="23" Margin="10,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="705" IsReadOnly="True" Grid.ColumnSpan="2" TextChanged="ChangePath"/>
                 <Button x:Name="BrowseBtn" Content="Browse" HorizontalAlignment="Left" Margin="408,63,0,0" VerticalAlignment="Top" Width="148" Cursor="Hand" Click="BrowseBtn_Click" Grid.Column="1"/>
                 <DataGrid x:Name="ContentsFilesDataGrid" AutoGenerateColumns="False" Background="Transparent" IsReadOnly="True" Margin="10,98,12,42" Grid.ColumnSpan="2">
                     <DataGrid.Resources>
@@ -82,8 +82,8 @@
         </TabItem>
         <TabItem x:Name="image" Header="Image Destroyer" Cursor="Hand">
             <Grid>
-                <TextBox x:Name="ImageFilePathTxt" HorizontalAlignment="Left" Height="23" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="705" IsReadOnly="True"/>
-                <Button x:Name="BrowseBtn1" Content="Browse" HorizontalAlignment="Left" Margin="722,46,0,0" VerticalAlignment="Top" Width="148" Cursor="Hand" Click="BrowseBtn_Click"/>
+                <TextBox x:Name="ImageFilePathTxt" HorizontalAlignment="Left" Height="23" Margin="10,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="705" IsReadOnly="True" TextChanged="ChangePath"/>
+                <Button x:Name="BrowseBtn1" Content="Browse" HorizontalAlignment="Left" Margin="722,59,0,0" VerticalAlignment="Top" Width="148" Cursor="Hand" Click="BrowseBtn_Click"/>
                 <DataGrid x:Name="ContentsImagesDataGrid" AutoGenerateColumns="False" Background="Transparent" IsReadOnly="True" Margin="10,92,12,47">
                     <DataGrid.Resources>
                         <ContextMenu x:Key="RowMenu" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
@@ -114,6 +114,7 @@
                 <Button x:Name="ImageScan" Content="List Duplicates" HorizontalAlignment="Left" Margin="635,551,0,0" VerticalAlignment="Top" Width="111" Click="listDupsBtn_Click"/>
                 <Button x:Name="deleteDuplicatesBtn1" Content="Delete Duplicates" HorizontalAlignment="Left" Margin="751,551,0,0" VerticalAlignment="Top" Width="119" Click="deleteDupsBtn_Click"/>
                 <ProgressBar x:Name="ImageProgressBar" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="860" Height="25"/>
+                <Label x:Name="ProgressLabel2" Content="" Foreground="White" HorizontalAlignment="Center" Margin="8,37,13,0" VerticalAlignment="Top" RenderTransformOrigin="-0.936,0.393" Width="859"/>
             </Grid>
         </TabItem>
         <TabItem x:Name="audio" Header="Audio Destroyer" Cursor="Hand">
@@ -124,7 +125,7 @@
                 </Grid.ColumnDefinitions>
                 <ProgressBar x:Name="audioDestroyerPBG" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Width="860" Height="25" Grid.ColumnSpan="2"/>
                 <Label Name="ProgressLabel3" Content="" Foreground="White" HorizontalAlignment="Center" Margin="10,37,15,0" VerticalAlignment="Top" RenderTransformOrigin="-0.936,0.393" Grid.ColumnSpan="2" Width="859"/>
-                <TextBox x:Name="AudioFilePathTxt" HorizontalAlignment="Left" Height="23" Margin="11,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="705" IsReadOnly="True"/>
+                <TextBox x:Name="AudioFilePathTxt" HorizontalAlignment="Left" Height="23" Margin="11,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="705" IsReadOnly="True" TextChanged="ChangePath"/>
                 <Button x:Name="BrowseBtn2" Content="Browse" HorizontalAlignment="Left" Margin="0,67,0,0" VerticalAlignment="Top" Width="148" Cursor="Hand" Click="BrowseBtn_Click" Grid.Column="1"/>
                 <DataGrid x:Name="ContentsAudioDataGrid" AutoGenerateColumns="False" Background="Transparent" IsReadOnly="True" Margin="10,102,12,47" Grid.ColumnSpan="2">
                     <DataGrid.Resources>
